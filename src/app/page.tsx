@@ -1,6 +1,4 @@
-import Link from "next/link";
-
-import { buttonVariants } from "@/components/ui/button";
+import DemoPage from "@/components/download-table/Page";
 
 export default function Home() {
   return (
@@ -16,24 +14,8 @@ export default function Home() {
             into your apps. Free. Open Source. And Next.js 13 Ready.
           </p>
         </div>
-        <div className="flex gap-4">
-          <Link
-            href={"/"}
-            target="_blank"
-            rel="noreferrer"
-            className={buttonVariants()}
-          >
-            Documentation
-          </Link>
-          <Link
-            target="_blank"
-            rel="noreferrer"
-            href={"/"}
-            className={buttonVariants({ variant: "outline" })}
-          >
-            GitHub
-          </Link>
-        </div>
+
+        <DemoPage />
       </section>
     </>
   );

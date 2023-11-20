@@ -1,12 +1,8 @@
 import { DownloadCloud } from "lucide-react";
-import dynamic from "next/dynamic";
 import Link from "next/link";
 import React from "react";
 
-const ThemeToggleButton = dynamic(
-  () => import("@/components/common/ThemeToggle/themeToggle"),
-  { ssr: false },
-);
+import ThemeToggleButton from "../ThemeToggle/themeToggle";
 
 export const Navigation = () => {
   return (
